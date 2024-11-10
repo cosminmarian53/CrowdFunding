@@ -1,11 +1,14 @@
 {
   "name": "kickstart-updated",
+  "homepage": "https://cosminmarian53.github.io/CrowdFunding",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "deploy": "npm run build && gh-pages -d out"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +25,8 @@
     "semantic-ui-react": "^2.1.3",
     "solc": "^0.8.15",
     "web3": "^1.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
